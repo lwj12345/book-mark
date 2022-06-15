@@ -8,7 +8,7 @@
                     <i class="el-icon-notebook-2 el-icon--right"></i>
                 </el-col>
                 <el-col :span="2" :offset="6" class='logo-container'>
-                <div class="put" @click="put()">我要发布</div>
+                <div class="put" @click="put()">发布商品</div>
                 </el-col>
                 <el-col :span='3' class="user">
                 <div class="userinfo">
