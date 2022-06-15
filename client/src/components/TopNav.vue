@@ -1,7 +1,6 @@
 <template>
     <div class="TopNav">
         <div class="nav">
-          
              <el-row :gutter="20">
                  <el-col :span="10" class='logo-container'>
                     <span class='title' @click="toHome()">二手图书交易平台</span>
@@ -25,7 +24,7 @@
                                     <i class="el-icon-caret-bottom el-icon--right"></i>
                                 </span>
                                 <el-dropdown-menu slot="dropdown">
-                                    <el-dropdown-item command='info'>编辑个人资料</el-dropdown-item>
+                                    <el-dropdown-item command='info'>编辑个人休息</el-dropdown-item>
                                     <el-dropdown-item command='my_product'>我的二手</el-dropdown-item>
                                     <el-dropdown-item command='message'>我的消息</el-dropdown-item>
                                     <el-dropdown-item command='logout'>退出</el-dropdown-item>

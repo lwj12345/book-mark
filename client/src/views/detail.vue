@@ -17,7 +17,7 @@
                 
                 <span>作者：{{productDetail.author}}</span>
                 <p>出售原因：{{productDetail.descript}}</p>
-                <p class="price">定价：￥{{productDetail.price}}</p>
+                <p class="price">价格：￥{{productDetail.price}}</p>
                 <div class="avatar">
                      <img class="avatar2" :src='productDetail.avatar' alt />
                 <span class="user_id">{{productDetail.user_id}}</span>
