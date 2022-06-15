@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "lwj",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "lwj",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-jwt": "^6.1.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "multiparty": "^4.2.3",
+    "mysql": "^2.18.1",
+    "nodejs-websocket": "^1.7.2",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.5.1",
+    "url": "^0.11.0"
+  }
+}
