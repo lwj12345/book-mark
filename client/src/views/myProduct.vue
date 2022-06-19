@@ -75,8 +75,8 @@ export default {
     },
     methods:{
          deleteRow(index, rows) {
-           rows.splice(index)
-            Message.success('删除成功')   
+          //  rows.splice(index)
+          //   Message.success('删除成功')   
          this.$axios.get(`/api/deleteBook`,{
            params:{
              id:rows[index].id

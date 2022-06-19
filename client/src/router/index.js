@@ -2,25 +2,25 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Register from '../views/Register.vue'
-import Nofind from '../views/404'
-import login from '../views/Login'
-import addbook from '../views/addbook'
-import Talk from '../views/talk'
-import editInfo from '../views/editInfo'
-import detail from '../views/detail'
-import message from '../views/message'
-import myProduct from '../views/myProduct'
+import Nofind from '../views/404.vue'
+import login from '../views/Login.vue'
+import addbook from '../views/addbook.vue'
+import Talk from '../views/talk.vue'
+import editInfo from '../views/editInfo.vue'
+import detail from '../views/detail.vue'
+import message from '../views/message.vue'
+import myProduct from '../views/myProduct.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect:'/login'
-  },{
-    path: '/home',
-    name: 'home',
-    component: Home
-  },{ path: '/register', name: 'register', component: Register }, 
+    // 默认路径
+    redirect: to => {
+      return '/login'
+    }
+  },,{path: '/home',name: 'home',component: Home},
+    { path: '/register', name: 'register', component: Register }, 
     { path: '*', name: '/404', component: Nofind },
     { path: '/login', name: 'login', component: login },
     { path: '/addbook', name: 'addbook', component: addbook },
@@ -33,14 +33,14 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  // base: process.env.BASE_URL,
+  mode: 'hash',
+  // base: '/',
   routes
 })
 
 // 添加路由守卫
 // router.beforeEach((to, from, next) => {
-//   const isLogin = localStorage.eleToken ? true : false;
+//   const isLogin = localStorage.token ? true : false;
 //   if (to.path == "/login" || to.path == "/register") {
 //     next(); 
 //   } else {
